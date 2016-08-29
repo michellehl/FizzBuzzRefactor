@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<p>Click the button to check your Fizz Buzz.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p class="demo"></p>
+
+ <script>
+function myFunction() {
+	
+    var person = prompt("Please enter an integer", "1,2,3 etc..");
+
+    person = (parseInt(person));
+    if (isNaN(person)) {
+    	alert("You must enter a valid number to continue...");
+    }
+  
+     for (var i = 1; i <= person; i++) {
+     	
+			if (i % 3 == 0 && i % 5 == 0){
+
+				document.write("FizzBuzz" + "<br/>");
+			}
+			else if (i % 3 == 0 && i % 5 != 0){
+				 document.write("fizz" + "<br/>");
+	 		}
+	 		else if (i % 3 != 0 && i % 5 == 0) {
+	 			document.write("buzz" + "<br/>");
+			 }
+			else {
+  	 			 document.write(i + "<br/>");
+			 }
+		
+	}
+
+}
+
+</script> 
+<p></p>
+</body>
+</html>
